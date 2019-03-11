@@ -38,3 +38,11 @@ def sum_array(array)
   end
   sum
 end
+
+def add_s(array)
+  array.each_with_index.map do |e, i|
+    if i != 1 
+      e << 's'
+    end
+  end
+end
